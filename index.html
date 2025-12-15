@@ -5,27 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-<body class="searche_body">
+<body class="body">
     <div class="search_barre">
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <i id="ser" class="fa-solid fa-magnifying-glass"></i>
         <input id="searche" type="text" placeholder="searche...">
     </div>
-    
-    <div class="main">
-        <div class="weather">
 
-        </div>
-        <div class="weather">
+    <div class="welcome">
+        <h4 id="title">
+            welcome to <h2>TodayWeather</h2>
+        </h4>
 
-        </div>
-        <div class="weather">
+        <button id="mode"><i class="fa-solid fa-lightbulb"></i></button>
 
-        </div>
     </div>
     
-    <button>EXIT</button>
+    <!--main weather info-->
+    <div id="h" class="hiden">
+        <div class="all">
+            <div class="main">
+                <div class="card card1">
+                    <!--status = cloudy, sicon = icon -->
+                    <div id="icon">
+                        <img id="sicon" src="images/cloudy.png" alt="">
+                    </div>
+                    <p id="status">cloudy</p>
+                    <!--heeeere icon weather for today-->
+                </div>
+                <div class="card card2">
+                    <!--temp = tempurature , tmax = temp max, tmin = temp min-->
+                    <h1 id="temp" class="temp">16°</h1>
+                    <div class="temp_max">
+                        <h1 id="tmax">22°</h1>
+                        <h1 id="tmin">6°</h1>
+                    </div>
+                </div>
+                <div class="card card3">
+                    <!--wind sunsert sunrise-->
+                    <div class="part1">
+                        <img src="images/dark_wind.png" alt="">
+                        <img src="images/dark_sunrise.png" alt="">
+                        <img src="images/dark_sunset.png" alt="">
+                        
+                    </div>
+                    <div class="part1 part2">
+                        <p id="wind">3.5 km/h</p>
+                        <p id="sunrise">06:13am</p>
+                        <p id="sunset">07:38pm</p>
+
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="main2">
+                <div class="day">
+                    <p id="d1">tomorrow</p>
+                    <img id="icond1" src="" alt="">
+                    <p id="msgd1">cloudy</p>
+                    <p id="tmpd1">16°</p>
+                </div>
+                <div class="day">
+                    <p id="d2">day2</p>
+                    <img id="icond2" src="" alt="">
+                    <p id="msgd2">cloudy</p>
+                    <p id="tmpd2">16°</p>
+                </div>
+                <div class="day">
+                    <p id="d3">day3</p>
+                    <img id="icond3" src="" alt="">
+                    <p id="msgd3">cloudy</p>
+                    <p id="tmpd3">16°</p>
+                </div>
+                <div class="day">
+                    <p id="d4">day4</p>
+                    <img id="icond4" src="" alt="">
+                    <p id="msgd4">cloudy</p>
+                    <p id="tmpd4">16°</p>
+                </div>
+            </div>
+            <button id="exit" class="btn_exit">EXIT</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
